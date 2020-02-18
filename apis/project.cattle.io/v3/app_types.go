@@ -29,6 +29,7 @@ type AppSpec struct {
 	Prune               bool              `json:"prune,omitempty"`
 	MultiClusterAppName string            `json:"multiClusterAppName,omitempty" norman:"type=reference[/v3/schemas/multiclusterapp]"`
 	ValuesYaml          string            `json:"valuesYaml,omitempty"`
+	HelmVersion         string            `json:"helmVersion,omitempty"`
 }
 
 var (
