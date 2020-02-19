@@ -3,6 +3,7 @@ package client
 const (
 	MultiClusterAppSpecType                      = "multiClusterAppSpec"
 	MultiClusterAppSpecFieldAnswers              = "answers"
+	MultiClusterAppSpecFieldHelmVersion          = "helmVersion"
 	MultiClusterAppSpecFieldMembers              = "members"
 	MultiClusterAppSpecFieldRevisionHistoryLimit = "revisionHistoryLimit"
 	MultiClusterAppSpecFieldRoles                = "roles"
@@ -15,6 +16,7 @@ const (
 
 type MultiClusterAppSpec struct {
 	Answers              []Answer         `json:"answers,omitempty" yaml:"answers,omitempty"`
+	HelmVersion          string           `json:"helmVersion,omitempty" yaml:"helmVersion,omitempty"`
 	Members              []Member         `json:"members,omitempty" yaml:"members,omitempty"`
 	RevisionHistoryLimit int64            `json:"revisionHistoryLimit,omitempty" yaml:"revisionHistoryLimit,omitempty"`
 	Roles                []string         `json:"roles,omitempty" yaml:"roles,omitempty"`

@@ -10,6 +10,7 @@ const (
 	MultiClusterAppFieldAnswers              = "answers"
 	MultiClusterAppFieldCreated              = "created"
 	MultiClusterAppFieldCreatorID            = "creatorId"
+	MultiClusterAppFieldHelmVersion          = "helmVersion"
 	MultiClusterAppFieldLabels               = "labels"
 	MultiClusterAppFieldMembers              = "members"
 	MultiClusterAppFieldName                 = "name"
@@ -35,6 +36,7 @@ type MultiClusterApp struct {
 	Answers              []Answer               `json:"answers,omitempty" yaml:"answers,omitempty"`
 	Created              string                 `json:"created,omitempty" yaml:"created,omitempty"`
 	CreatorID            string                 `json:"creatorId,omitempty" yaml:"creatorId,omitempty"`
+	HelmVersion          string                 `json:"helmVersion,omitempty" yaml:"helmVersion,omitempty"`
 	Labels               map[string]string      `json:"labels,omitempty" yaml:"labels,omitempty"`
 	Members              []Member               `json:"members,omitempty" yaml:"members,omitempty"`
 	Name                 string                 `json:"name,omitempty" yaml:"name,omitempty"`
